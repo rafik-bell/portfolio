@@ -22,11 +22,11 @@ export default function Partcontact1() {
       </Box>
       <Box sx={{ display:"flex",padding:"20px",bgcolor:"lightgray" ,marginBottom:"10px" ,borderRadius:"20px",width:"80%"}}>
       <MailOutlineIcon  sx={{height:'40px',width:"40px",marginRight:"5%"}}></MailOutlineIcon>
-        <Typography variant='h5'>rafikbellarbi3@gmail. com</Typography>
+        <Typography variant='h5'>rafikbellarbi3 @gmail. com</Typography>
       </Box>
       <Box  sx={{ display:"flex",padding:"20px",bgcolor:"lightgray" ,borderRadius:"20px",width:"80%"}}>
         <LocationOnIcon  sx={{height:'40px',width:"40px",marginRight:"5%"}}></LocationOnIcon>
-        <Typography variant='h5'>Berrouaghia ,Medea</Typography>
+        <Typography variant='h5' sx={{width:'50%'}}>Berrouaghia ,Medea</Typography>
       </Box>
       </Grid>
       <Grid item  xs={12} sm={6} md={6} sx={{padding:0}}>

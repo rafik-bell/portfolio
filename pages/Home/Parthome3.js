@@ -21,8 +21,8 @@ export default function Parthome3() {
         <Typography variant='h6'>What i will do for you </Typography>
         <Typography variant='h2'>Services</Typography>
     </Box>
-    <Box sx={{marginLeft:"60px"}}>
-     <Grid container spacing={3}>
+    
+     <Grid container spacing={3} align="center">
         
         <Grid item xs={12} sm={6} md={4} sx={{padding:0}} >
         <Box sx={{width:"70%" , padding: "40px 0"}}>
@@ -57,7 +57,7 @@ export default function Parthome3() {
         </Grid>
         
       </Grid>
-      </Box>
+     
       
    </Box>
    <Box sx={{fontSize:'1rem',transform :'translateY(-70px) rotate(90deg)',letterSpacing:"0.7rem",textTransform:"uppercase",marginRight:"95%",display:'flex',flexDirection:'row',marginTop:"-300px"}}>
@@ -69,7 +69,7 @@ export default function Parthome3() {
 
             
             
-          <a style={a} href='https://www.linkedin.com/in/rafik-bellarbi'>
+          <a style={a} href='https://www.linkedin.com/in/rafik-bellarbi-495470221/'>
                   <LinkedInIcon></LinkedInIcon>
                   
                   likidin

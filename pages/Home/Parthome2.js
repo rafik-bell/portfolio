@@ -11,7 +11,7 @@ const a ={alignItems:"center",justifyContent:'center',display:'flex' ,marginRigh
 export default function Parthome2() {
   return (
     <div>
-    <Box  sx={{marginTop:"17rem" ,marginLeft :"20%" ,marginRight:"20%", display:"flex"}}>
+    <Box  sx={{marginTop:"15%" ,marginLeft :"20%" ,marginRight:"20%", display:"flex"}}>
     <Grid container spacing={2}>
     <Grid item xs={12} md={6}>
       <Box sx={{width:"100%", marginTop:"50px"}}>
@@ -26,8 +26,8 @@ export default function Parthome2() {
       </Box>
       </Grid>
       <Grid item xs={12} md={6}>
-      <Box sx={{marginLeft:"150px",border:"3px solid white",width:'305px',height:'385px'}}>
-      <img src="/photo4.jpg" style={img} alt="" />
+      <Box  align="center" sx={{marginLeft:"0%",width:'100%',height:'100%'}}>
+      <img src="/photo4.jpg" className='img' alt="" />
         
         
         
@@ -35,33 +35,52 @@ export default function Parthome2() {
       </Box> 
       </Grid> 
       </Grid>
-      <Box sx={{fontSize:'1rem',transform :'translateY(-70px) rotate(90deg)',letterSpacing:"0.7rem",textTransform:"uppercase",marginLeft:"60%",display:'flex',flexDirection:'row',marginTop:"200px",position:"absolute"}}>
-          <Box sx={{display:'flex',flexDirection:'row',marginRight:'30px'}}>
-          <p>Follow</p>
-              <img src="/scroll-down-arrow.svg" alt="icon" style={img2} />
-          </Box>
-          <Box sx={{alignItems:"center",justifyContent:'center',display:'flex' }}>
-
-            
-            
-          <a style={a} href='https://www.linkedin.com/in/rafik-bellarbi'>
-                  <LinkedInIcon></LinkedInIcon>
-                  
-                  likidin
-
-                </a>
-              
-              
-                <a style={a} href='https://github.com/rafik-bell'>
-                <GitHubIcon></GitHubIcon>
-                  GitHub
-                  
-                </a>
-            
-          </Box>
-          </Box>
+      
 
     </Box>
+    
+    <style >{`
+          .img{ width:80%;
+           height:80%; 
+           border-radius: 10px;
+           border: 3px solid white;}
+           .img2{
+            transform: rotate(-90deg);
+            margin-left: 30px;
+
+           }
+           .a {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-right: 10px;
+          }
+    
+
+        @media (max-width: 1000px) {
+          .img{
+            width: 100%;
+            height:100%;
+  
+          }
+        }
+        @media (max-width: 400px) {
+        .img{
+          width: 100%;
+          height:100%;
+
+        }
+      
+      
+      }
+       
+       
+        
+        
+        
+        
+        
+      `}</style>
     </div>
   )
 }

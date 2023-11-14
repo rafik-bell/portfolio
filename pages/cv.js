@@ -7,7 +7,7 @@ export default function Cv() {
     <div>
       <Navbar></Navbar>
 
-      <iframe src='/cv.pdf' style={{ width: '100%', height: '700px' }}></iframe>
+      <iframe src='/cv1.pdf' style={{ width: '100%', height: '700px' }}></iframe>
 
       <Footer></Footer>
     </div>

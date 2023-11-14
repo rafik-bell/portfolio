@@ -34,7 +34,7 @@ export default function Partabout1() {
             </Grid>
             <Grid item xs={12} sm={6} md={6} sx={{padding:0}} >
             <Box>
-            <img src="/photo4.jpg" style={img} alt="" />
+            <img src="/photo4.jpg" className='img' alt="" />
 
             </Box>
             </Grid>
@@ -72,7 +72,48 @@ export default function Partabout1() {
             
           </Box>
           </Box>
+          <style >{`
+          .img{ width:80%;
+           height:80%; 
+           border-radius: 10px;
+           border: 3px solid white;}
+           .img2{
+            transform: rotate(-90deg);
+            margin-left: 30px;
 
+           }
+           .a {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-right: 10px;
+          }
+    
+
+        @media (max-width: 1000px) {
+          .img{
+            width: 100%;
+            height:400px;
+  
+          }
+        }
+        @media (max-width: 400px) {
+        .img{
+          width: 100%;
+          height:400px;
+
+        }
+      
+      
+      }
+       
+       
+        
+        
+        
+        
+        
+      `}</style>
       
     </div>
   )
