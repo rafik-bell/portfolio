@@ -28,9 +28,8 @@ export default function Herosection() {
             <p className='name'><Typography  fontFamily={"serif"} variant='h2'sx={{textAlign:'center'}}>Rafik Bellarbi</Typography></p>
           
           
-            <Typography sx={{width:'100%',marginBottom:"10px",fontWeight:600,textAlign:'center',margin:'3rem 0rem'}}> I am working as a full stack web developer for 2
-              years. I love to design and make new web experiences for the
-              people.</Typography>
+            <Typography sx={{width:'100%',marginBottom:"10px",fontWeight:600,textAlign:'center',margin:'3rem 0rem'}}> Im Rafik Bellarbi Passionate full-stack web developer  with 2 years of experience creating applications. Expertise in front-end technologies like React, Next js and back-end development using Node.js. Dedicated to clean code, thoughtful design, and impactful user experiences. Check out my recent projects on GitHub. 
+              </Typography>
               <Box sx={{textAlign:'center',margin:'5rem 3.5rem'}}>
             <Button variant="contained"  href='/projct' sx={{height:'3rem',width:'11rem',color:'white'}}>See my works</Button>
           </Box>
