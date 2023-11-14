@@ -30,7 +30,7 @@ export default function Parthome3() {
                 <CodeIcon sx={{ width:"50px",height:"50px"}}></CodeIcon>
                 <Typography variant='h5' sx={{fontWeight:600,marginBottom:"10px"}}>Backend developer</Typography>
             </Box>
-            <Typography>PHP , Node Js (express js), Flask</Typography>
+            <Typography>PHP , Node Js (express js), Flask.</Typography>
             </Box>
         </Grid>
         
@@ -41,7 +41,7 @@ export default function Parthome3() {
                 <TvIcon sx={{ width:"50px",height:"50px"}}></TvIcon>
                 <Typography variant='h5' sx={{fontWeight:600,marginBottom:"10px"}}>Frontend developer</Typography>
             </Box>
-            <Typography>Html, css, JavaScript, React Js , Bootstrap, Next Js</Typography>
+            <Typography>Html, css, JavaScript, React Js , Bootstrap, Next Js.</Typography>
             </Box>
         </Grid>
         
@@ -52,7 +52,7 @@ export default function Parthome3() {
                 <DataObjectIcon sx={{ width:"50px",height:"50px"}}></DataObjectIcon>
                 <Typography variant='h5'sx={{fontWeight:600,marginBottom:"10px"}}>Database developer</Typography>
             </Box>
-            <Typography>MySQL, XML,Mongo db</Typography>
+            <Typography>MySQL, XML,Mongo db.</Typography>
             </Box>
         </Grid>
         
