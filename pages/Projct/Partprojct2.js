@@ -17,13 +17,13 @@ class Partprojct2 extends Component {
     name: "Météo",
     disc:"A meteo app provides real-time weather information and forecasts for specific locations.",
     img :"/meteo.jpg",
-    url :"http://lopsided-crack.surge.sh/"
+    url :"https://meteo-eight-zeta.vercel.app/"
   },
   {
     name: "Online BMR Calculator",
     disc:" من خلال حاسبة حرق السعرات الحرارية، تستطيع معرفة عدد السعرات الذي تناولته خلال اليوم ضمن نظامك الغذائي، ادخل معطياتك واكتشف الان. ",
     img :"/bmr.jpg",
-    url :"http://parched-bear.surge.sh/"
+    url :"https://bmr-calculator-two.vercel.app/"
   },
   
   {
