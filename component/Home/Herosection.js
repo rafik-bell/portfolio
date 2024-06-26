@@ -9,7 +9,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import Image from 'next/image';
 import imag1 from "../../pages/assets/images/bj.png"
 import { motion } from 'framer-motion';
-import { Opacity } from '@mui/icons-material';
+
 
 const animationfont ={
   hidden:{

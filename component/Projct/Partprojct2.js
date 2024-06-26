@@ -2,8 +2,42 @@ import { Box ,Grid, Paper, Typography } from '@mui/material';
 import React, { Component } from 'react';
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
+import { motion } from 'framer-motion';
 const img ={width:'250x',height:'150px' ,margin:"20px 0px",borderRadius:"20px"}
+const animationfont ={
+  hidden:{
+    
+   
+  },
+  visible:{
+    
+    
+    transition:{
+      duration: 2,
+      staggerChildren:0.5
 
+      
+    }
+
+  }
+}
+const animationfontChild ={
+  hidden:{
+    opacity:0,
+    x:100
+
+  },
+  visible:{
+    x:0,
+    opacity:1,
+    transition:{
+      duration: 1,
+     
+
+      
+    }
+  }
+}
 
 class Partprojct2 extends Component {
   state = [{
@@ -65,7 +99,7 @@ class Partprojct2 extends Component {
   render() {
     const { items } = this.state;
     return (
-      <div>
+      <>
        <Box sx={{margin:"0% 16%"}}>
        <TextField
         label="Projct name"
@@ -75,14 +109,14 @@ class Partprojct2 extends Component {
           endAdornment: <SearchIcon />,
         }}
       sx={{marginBottom:"40px"}}/>
-       <Grid container spacing={2}>
+       <Grid container spacing={2} component={motion.div} variants={animationfont} initial="hidden" animate="visible">
        {this.state.map((item, index) => (
 
         
         
-        <Grid item key={item.name} xs={12} sm={6} md={6} sx={{padding:0}} >
+        <Grid variants={animationfontChild} component={motion.div} item key={item.name} xs={12} sm={6} md={6} sx={{padding:0}} >
           <a href={item.url}>
-          <Paper elevation={16}sx={{backgroundImage: `url(${item.img})`,borderRadius:"20px",minHeight:"300px",  backgroundSize: 'cover',
+          <Paper component={motion.div} whileHover={{ scale: [1, 1.3,1]  }}  elevation={16}sx={{backgroundImage: `url(${item.img})`,borderRadius:"20px",minHeight:"300px",  backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',position:'relative', zIndex :1}}>
 
@@ -98,9 +132,9 @@ class Partprojct2 extends Component {
           </Box>
           </Paper>
           <Box sx={{margin:"8% 0px 0px 5%"}}>
-          <Typography fontWeight={500} sx={{margin:"0px 5px" ,color:"black" }}><strong> {item.name}</strong> </Typography>
+          <Typography fontWeight={500} sx={{margin:"0px 5px"  }}><strong> {item.name}</strong> </Typography>
           
-          <Typography sx={{margin:"0px 5px",color:"black" ,height:'80%'}} fontSize={10}>{item.disc}</Typography>
+          <Typography sx={{margin:"0px 5px" ,height:'80%'}} fontSize={10}>{item.disc}</Typography>
 
           </Box>
 
@@ -146,7 +180,7 @@ class Partprojct2 extends Component {
         
         
       `}</style>
-      </div>
+      </>
     );
   }
 }
