@@ -43,7 +43,7 @@ class Partprojct2 extends Component {
   state = [{
     name: "Portfolio Site",
     disc:"A portfolio website is a concise, online showcase of an individual's or professional's work, skills, and achievements.",
-    img :"./rafik.jpg",
+    img :"./rafik1.jpg",
     url :"/"
   }
   ,
