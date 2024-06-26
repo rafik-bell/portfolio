@@ -70,7 +70,7 @@ class Partprojct2 extends Component {
   {
     name: "Game of Thrones",
     disc:"A site for the characters of the Game of Thrones series, and you can read a summary of 5 episodes of it ",
-    img :"./game.jpg",
+    img :"./game1.jpg",
     url :"http://sad-window.surge.sh/"
   }
   
@@ -78,7 +78,7 @@ class Partprojct2 extends Component {
   {
     name: "Store application",
     disc:" A web application for store management is a digital platform that helps businesses efficiently handle tasks like inventory tracking, sales management, and customer interactions, streamlining store operations.. ",
-    img :"./cj.jpg",
+    img :"./cj1.jpg",
     url :""
   }
   
@@ -86,7 +86,7 @@ class Partprojct2 extends Component {
   {
     name: "Login",
     disc:" A login page template is a pre-designed format for creating login interfaces in web or app development, simplifying the design process. ",
-    img :"./login.jpg",
+    img :"./login1.jpg",
     url :"https://rafik-bell.github.io/login_page/"
   }
   
