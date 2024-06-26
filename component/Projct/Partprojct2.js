@@ -9,34 +9,34 @@ class Partprojct2 extends Component {
   state = [{
     name: "Portfolio Site",
     disc:"A portfolio website is a concise, online showcase of an individual's or professional's work, skills, and achievements.",
-    img :"/rafik.jpg",
+    img :"./rafik.jpg",
     url :"/"
   }
   ,
    {
     name: "Météo",
     disc:"A meteo app provides real-time weather information and forecasts for specific locations.",
-    img :"/meteo.jpg",
+    img :"./meteo.jpg",
     url :"https://meteo-eight-zeta.vercel.app/"
   },
   {
     name: "Online BMR Calculator",
     disc:" من خلال حاسبة حرق السعرات الحرارية، تستطيع معرفة عدد السعرات الذي تناولته خلال اليوم ضمن نظامك الغذائي، ادخل معطياتك واكتشف الان. ",
-    img :"/bmr.jpg",
+    img :"./bmr.jpg",
     url :"https://bmr-calculator-two.vercel.app/"
   },
   
   {
     name: "Instagram react native app",
     disc:"Instagram react native app ,Show images and vidio of app in GitHub ",
-    img :"/insta1.jpg",
+    img :"./insta1.jpg",
     url :"https://github.com/rafik-bell/Instagram-app"
   }
   ,
   {
     name: "Game of Thrones",
     disc:"A site for the characters of the Game of Thrones series, and you can read a summary of 5 episodes of it ",
-    img :"/game.jpg",
+    img :"./game.jpg",
     url :"http://sad-window.surge.sh/"
   }
   
@@ -44,7 +44,7 @@ class Partprojct2 extends Component {
   {
     name: "Store application",
     disc:" A web application for store management is a digital platform that helps businesses efficiently handle tasks like inventory tracking, sales management, and customer interactions, streamlining store operations.. ",
-    img :"/cj.jpg",
+    img :"./cj.jpg",
     url :""
   }
   
@@ -52,7 +52,7 @@ class Partprojct2 extends Component {
   {
     name: "Login",
     disc:" A login page template is a pre-designed format for creating login interfaces in web or app development, simplifying the design process. ",
-    img :"/login.jpg",
+    img :"./login.jpg",
     url :"https://rafik-bell.github.io/login_page/"
   }
   
