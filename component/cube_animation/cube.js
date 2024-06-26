@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Loader.module.css';
+import { Box } from '@mui/material';
 
 const CubeLoader = () => {
   return (
+    <Box sx={{opacity:"60%"}}>
     <div className={styles.cubeLoader}>
       <div className={styles.cubeTop}></div>
       <div className={styles.cubeWrapper}>
@@ -12,6 +14,7 @@ const CubeLoader = () => {
         <span style={{ '--i': 3 }} className={styles.cubeSpan}></span>
       </div>
     </div>
+    </Box>
   );
 };
 

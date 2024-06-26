@@ -1,5 +1,5 @@
 
-import { Box, Button, Typography,Grid, Paper } from '@mui/material'
+import { Box, Button, Typography,Grid, Paper, Hidden } from '@mui/material'
 import React from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -8,7 +8,42 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Image from 'next/image';
 import imag1 from "../../pages/assets/images/bj.png"
+import { motion } from 'framer-motion';
+import { Opacity } from '@mui/icons-material';
 
+const animationfont ={
+  hidden:{
+    x:500,
+   
+  },
+  visible:{
+    x:0,
+    
+    transition:{
+      duration: 2,
+      staggerChildren:0.5
+
+      
+    }
+
+  }
+}
+const animationfontChild ={
+  hidden:{
+    opacity:0
+
+
+  },
+  visible:{
+    opacity:1,
+    transition:{
+      duration: 0.5,
+     
+
+      
+    }
+  }
+}
 
 
 const img ={width:'550px',height:'400px' ,borderRadius:"10px" }
@@ -21,20 +56,20 @@ export default function Herosection() {
   return (
 
     <Box  sx={{maxWidth:"100%" }}>
-    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: '100vh',pt:{lg:"10%",md:"15%",xs:"30%"} }}>
+    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: '100%',pt:{lg:"10%",md:"15%",xs:"30%"} }}>
       <Grid container spacing={2} justifyContent="center" alignItems="center">
 
     <Grid item xs={12} md={6}>
-      <Box sx={{margin:"10px 50px" ,color:'rgb(244, 241, 241)'}}>
+      <Box  component={motion.div} variants={animationfont} initial="hidden" animate="visible"sx={{margin:"10px 50px" ,color:'rgb(244, 241, 241)'}}>
       
-            <Typography fontFamily={"serif"} variant='h4' sx={{textAlign:'center'}}>Hello, This is</Typography>
-            <Typography  fontFamily={"serif"}variant='h2' sx={{ textAlign: 'center' }}>Rafik Bellarbi</Typography>
+            <Typography variants={animationfontChild} component={motion.div}  fontFamily={"serif"} variant='h4' sx={{textAlign:'center'}}>Hello, This is</Typography>
+            <Typography variants={animationfontChild} component={motion.div}   fontFamily={"serif"}variant='h2' sx={{ textAlign: 'center' }}>Rafik Bellarbi</Typography>
           
           
-            <Typography sx={{width:'100%',marginBottom:"10px",fontWeight:600,textAlign:"justify",margin:'2rem 0rem'}}>I am Rafik Bellarbi, a Full Stack Web Developer with 2+ years of experience in designing, developing, and maintaining web applications. Skilled in JavaScript, React ,Next, Node.js, Express.js, Mongodb and SQL. Proven track record of delivering high-quality software solutions and optimizing performance. Strong problem-solving abilities and collaborative team player. Always eager to learn new technologies and enhance my skills.
+            <Typography variants={animationfontChild}component={motion.div}  sx={{width:'100%',marginBottom:"10px",fontWeight:600,textAlign:"justify",margin:'2rem 0rem'}}>I am Rafik Bellarbi, a Full Stack Web Developer with 2+ years of experience in designing, developing, and maintaining web applications. Skilled in JavaScript, React ,Next, Node.js, Express.js, Mongodb and SQL. Proven track record of delivering high-quality software solutions and optimizing performance. Strong problem-solving abilities and collaborative team player. Always eager to learn new technologies and enhance my skills.
               </Typography>
               <Box sx={{textAlign:'center',margin:'5rem 3.5rem'}}>
-            <Button variant="contained"  href='/projct' sx={{height:'3rem',width:'11rem',color:'white'}}>See my works</Button>
+            <Button component={motion.div} whileHover={{ scale: [1, 1.3,1]  }} variant="contained"  href='/projct' sx={{height:'3rem',width:'11rem',color:'white'}}>See my works</Button>
           </Box>
           </Box>
           </Grid>
@@ -42,7 +77,7 @@ export default function Herosection() {
 
           <Box className="imageBox" sx={{ margin: '10px 40px' }}>
       <Paper data-aos="fade-down" elevation={12} align="center" sx={{ position: 'relative', width: '100%', borderRadius: '20px' }}>
-        <Image src="/pht1.jpg" height="500" width="700" alt="" style={{borderRadius: '20px'}}/>
+        <Image src="/pht1.jpg" height="450" width="650" alt="" style={{borderRadius: '20px'}}/>
         <div className="overlay">
           <a  href="https://www.facebook.com/profile.php?id=100007353198005&mibextid=kFxxJD" target="_blank" rel="noopener noreferrer">
             <FacebookIcon fontSize="large" ></FacebookIcon>

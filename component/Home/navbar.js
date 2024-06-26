@@ -60,11 +60,11 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
 
     {scrollDirection ==='down' ? (
-    <Box    sx={{ pt: '0.5px', bgcolor: 'transparent' }}>
+    <Box    sx={{ pt: '0.5px', bgcolor: '#1769aa' }}>
       {/* Content for Box */}
     </Box>
   ) : (
-    <AppBar sx={{ bgcolor: 'transparent' }}>
+    <AppBar sx={{ bgcolor:prevScrollY? 'black' : 'transparent'  }}>
      
 
       

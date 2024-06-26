@@ -4,6 +4,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
+
 export default function Partcontact1() {
   return (
     <div>

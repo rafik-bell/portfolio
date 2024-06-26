@@ -8,6 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Image from 'next/image';
 import { useScroll, animated } from '@react-spring/web'
 import Cube from '../cube_animation/cube'
+import { MyComponent } from '../frame-motion_compo/animation';
 
 
 
