@@ -1,8 +1,24 @@
+@font-face {
+  font-family: 'Titre';
+  src: url(../pages/assets/fonts/Montserrat-Bold.ttf) format("truetype")
+}
+@font-face {
+  font-family: 'Sous-titre';
+  src: url(../pages/assets/fonts/Montserrat-SemiBold.ttf) format("truetype")
+}
+@font-face {
+  font-family: 'Text';
+  src: url(../pages/assets/fonts/RobotoMono-Regular.ttf) format("truetype")
+}
+*{
+  font-family: "Text";
+}
 :root{
 
 }
 html,
-body {
+body { 
+
   padding: 0;
   margin: 0;
   font-family: 'Times New Roman', Times, serif;

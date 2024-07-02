@@ -4,7 +4,7 @@ import Footer from '../component/Home/Footer'
 import Partabout1 from '../component/About/Partabout1'
 import Partabout2 from '../component/About/Partabout2'
 import Parthome4 from '../component/Home/Parthome4'
-import imag1 from "./assets/images/bgglobal.png"
+import imag1 from "./assets/images/bgglobal1.png"
 import { Box } from '@mui/material'
 import { motion } from 'framer-motion'
 export default function About() {

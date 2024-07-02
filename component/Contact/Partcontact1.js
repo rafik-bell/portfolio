@@ -17,15 +17,15 @@ export default function Partcontact1() {
      <Grid container spacing={2}>
   <Grid item  xs={12} sm={6} md={6} sx={{padding:0}}>
 
-      <Box sx={{ display:"flex",padding:"20px" ,marginBottom:"10px",bgcolor:"#1565c0" ,borderRadius:"20px",width:"80%"}}>
+      <Box sx={{ color:"black",display:"flex",padding:"20px" ,marginBottom:"10px",bgcolor:"white" ,borderRadius:"20px",width:"80%"}}>
         <LocalPhoneIcon sx={{height:'40px',width:"40px",marginRight:"5%"}}></LocalPhoneIcon>
         <Typography variant='h5'>+213 675925960</Typography>
       </Box>
-      <Box sx={{ display:"flex",padding:"20px",bgcolor:"#1565c0" ,marginBottom:"10px" ,borderRadius:"20px",width:"80%"}}>
+      <Box sx={{ display:"flex",padding:"20px",bgcolor:"white" ,marginBottom:"10px" ,borderRadius:"20px",width:"80%"}}>
       <MailOutlineIcon  sx={{height:'40px',width:"40px",marginRight:"5%"}}></MailOutlineIcon>
         <Typography variant='h5'>rafikbellarbi3 @gmail. com</Typography>
       </Box>
-      <Box  sx={{ display:"flex",padding:"20px",bgcolor:"#1565c0" ,borderRadius:"20px",width:"80%"}}>
+      <Box  sx={{ display:"flex",padding:"20px",bgcolor:"white" ,borderRadius:"20px",width:"80%"}}>
         <LocationOnIcon  sx={{height:'40px',width:"40px",marginRight:"5%"}}></LocationOnIcon>
         <Typography variant='h5' sx={{width:'50%'}}>Berrouaghia ,Medea</Typography>
       </Box>

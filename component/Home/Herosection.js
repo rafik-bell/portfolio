@@ -62,11 +62,11 @@ export default function Herosection() {
     <Grid item xs={12} md={6}>
       <Box  component={motion.div} variants={animationfont} initial="hidden" animate="visible"sx={{margin:"10px 50px" ,color:'rgb(244, 241, 241)'}}>
       
-            <Typography variants={animationfontChild} component={motion.div}  fontFamily={"serif"} variant='h4' sx={{textAlign:'center'}}>Hello, This is</Typography>
-            <Typography variants={animationfontChild} component={motion.div}   fontFamily={"serif"}variant='h2' sx={{ textAlign: 'center' }}>Rafik Bellarbi</Typography>
+            <Typography variants={animationfontChild} component={motion.div}  fontFamily='Titre' variant='h4' sx={{textAlign:'center' }}>Hello, This is</Typography>
+            <Typography variants={animationfontChild} component={motion.div}   fontFamily='Titre'variant='h2' sx={{ textAlign: 'center' }}>Rafik Bellarbi</Typography>
           
           
-            <Typography variants={animationfontChild}component={motion.div}  sx={{width:'100%',marginBottom:"10px",fontWeight:600,textAlign:"justify",margin:'2rem 0rem'}}>I am Rafik Bellarbi, a Full Stack Web Developer with 2+ years of experience in designing, developing, and maintaining web applications. Skilled in JavaScript, React ,Next, Node.js, Express.js, Mongodb and SQL. Proven track record of delivering high-quality software solutions and optimizing performance. Strong problem-solving abilities and collaborative team player. Always eager to learn new technologies and enhance my skills.
+            <Typography variants={animationfontChild}component={motion.div}  sx={{width:'100%',marginBottom:"10px",fontWeight:600,textAlign:"justify",margin:'2rem 0rem',fontFamily:"Text"}}>I am Rafik Bellarbi, a Full Stack Web Developer with 2+ years of experience in designing, developing, and maintaining web applications. Skilled in JavaScript, React ,Next, Node.js, Express.js, Mongodb and SQL. Proven track record of delivering high-quality software solutions and optimizing performance. Strong problem-solving abilities and collaborative team player. Always eager to learn new technologies and enhance my skills.
               </Typography>
               <Box sx={{textAlign:'center',margin:'5rem 3.5rem'}}>
             <Button component={motion.div} whileHover={{ scale: [1, 1.3,1]  }} variant="contained"  href='/projct' sx={{height:'3rem',width:'11rem',color:'white'}}>See my works</Button>

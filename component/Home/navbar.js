@@ -4,7 +4,10 @@ import Tabs from "@mui/material/Tabs"
 import Box from "@mui/material/node/Box/Box";
 import { AppBar, Link, Toolbar } from "@mui/material";
 import Image from "next/image";
-
+import img1 from '../../pages/assets/images/portfolio1.png'
+import img2 from '../../pages/assets/images/portfolio2.png'
+import img3 from '../../pages/assets/images/portfolio3.png'
+import { motion } from "framer-motion";
 export default function Navbar() {
     const [value, setValue] = React.useState('one');
 
@@ -64,37 +67,59 @@ export default function Navbar() {
       {/* Content for Box */}
     </Box>
   ) : (
-    <AppBar sx={{ bgcolor:prevScrollY? 'black' : 'transparent'  }}>
+    <AppBar sx={{  bgcolor:prevScrollY? 'black' : 'transparent'  }}>
      
 
       
         <Toolbar  sx={{position: 'sticky', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',padding:"20px 0px" ,display:"flex",justifyContent:"space-around"}}>
           <div className="divimg">
-          <Image src="/logo.png" width="120" height="50" sx={{marginBottom:'30px '}}></Image>
+          <Image src={img1} width="100" height="60" sx={{}}></Image>
+          <motion.div style={{margin:"0px 5px "}}
+  component={motion.div}
+
+transition={{
+  
+  duration: 7,
+ 
+}}
+
+    animate={{
+      
+      scale: [1, 0.7, 1.1, 0.7, 1],
+      rotate: [0, 90, 180, 270, 360],
+      
+    }}
+  >
+    <Image  src={img3} width="25" height="60" sx={{}}></Image>
+    </motion.div>
+    <Image src={img2} width="50" height="60" sx={{}}></Image>
           </div>
           
         
        <Tabs  value={value} onChange={handleChange} centered>
-        <Tab sx={{fontWeight:700, color:"white"}}label="Home" href="/" ></Tab>
-        <Tab sx={{fontWeight:700, color:"white"}}label="About" href="/about" />
-        <Tab sx={{fontWeight:700, color:"white"}}label="Projrcts" href="/projct"/>
-        <Tab sx={{fontWeight:700, color:"white"}}label="contact" href="/contact" />
+        <Tab sx={{fontWeight:700, color:"white" ,fontFamily:"Sous-titre"}}label="Home" href="/" ></Tab>
+        <Tab sx={{fontWeight:700, color:"white",fontFamily:"Sous-titre"}}label="About" href="/#section1" />
+        <Tab sx={{fontWeight:700, color:"white",fontFamily:"Sous-titre"}}label="Projrcts" href="/projct"/>
+        <Tab sx={{fontWeight:700, color:"white",fontFamily:"Sous-titre"}}label="contact" href="/#section2" />
         
       </Tabs>
     </Toolbar>
     </AppBar>)}
     <style >{`
           
+      .divimg{
+            
+            display: flex;
+             flex-direction: row;
+          }
+        
+          
         @media (max-width: 600px) {
           .divimg{
             display: none;
-
+            
           }
-        
-      
-      
-      }
-       
+    }
        
         
         

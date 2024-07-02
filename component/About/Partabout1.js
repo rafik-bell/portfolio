@@ -16,23 +16,22 @@ const img ={width:'450px',height:'550px'}
 export default function Partabout1() {
   return (
     <div>
-        <Box sx={{display:"flex",marginLeft :"15%" ,marginRight:"15%",pt:{lg:"15%",md:"15%",xs:"30%"}}}>
+        <Box sx={{display:"flex",margin:'0px 10%',pt:{lg:"15%",md:"15%",xs:"30%"}}}>
         <Grid container spacing={2}>
         
-        <Grid item xs={12} sm={6} md={6} sx={{padding:0}} >
+        <Grid item xs={12} sm={6} md={7} sx={{padding:0}} >
             <Box >
-           <Typography variant='h5' >  Hi, I am Bellarbi Rafik </Typography>
-           <Typography variant='h4'sx={{marginBottom:"15px"}}>A full stack  Web developer</Typography> 
-           <Typography variant='h6' sx={{marginBottom:"15px"}}>Degree in WEB systems and technologies engineering, Full stack developer passionate about the maintenance of WEB applications (front and back end, database) and artificial intelligence, A good personal experience in this field with Projects and mini Projects mentioned at the bottom of the CV.</Typography> 
-           <Typography variant='h6'sx={{marginBottom:"15px"}}> I started coding bfore 4 year. Coding is also an art for me. I love it and now I have the opportunity to design along with the coding. I find it really interesting and I enjoyed the process a lot.</Typography> 
-           <Typography variant='h6' sx={{marginBottom:"15px"}}> My vision is to make the world a better place. Now almost everything is becoming better than ever. It is time for us to create more good stuff that helps the world to become a better place.</Typography>
+           <Typography variant='h5'  fontFamily="Sous-titre" >  Hi, I am Bellarbi Rafik </Typography>
+           <Typography fontFamily="Sous-titre" variant='h4'sx={{marginBottom:"15px"}}>A full stack  Web developer</Typography> 
+           <Typography  fontFamily="Text" variant='h6' textAlign="justify" sx={{marginBottom:"15px"}}>I am Rafik Bellarbi, a Full Stack Web Developer with 2+ years of experience in designing, developing, and maintaining web applications. Skilled in JavaScript, React ,Next, Node.js, Express.js, Mongodb and SQL. Proven track record of delivering high-quality software solutions and optimizing performance. Strong problem-solving abilities and collaborative team player. Always eager to learn new technologies and enhance my skills.
+           </Typography> 
 
 
            <Button variant="contained" href='/cv'> Downlead CV</Button> 
             </Box>
 
             </Grid>
-            <Grid item xs={12} sm={6} md={6} sx={{padding:0}} >
+            <Grid item xs={12} sm={6} md={5} sx={{padding:0}} >
             <Box>
             <img src="/photo4.jpg" className='img' alt="" />
 

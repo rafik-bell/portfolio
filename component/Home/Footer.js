@@ -8,7 +8,7 @@ export default function Footer() {
             <Grid container spacing={4}>
     <Grid item xs={12} md={3}>
        
-        <Typography variant='h5'><strong>Rafik Bellarbi</strong></Typography>
+        <Typography fontFamily='Sous-titre' variant='h5'><strong>Rafik Bellarbi</strong></Typography>
 
         <Typography>*A full stack web developer from Berrouaghia, Medea. I always make websites that have unique designs and also has a good performance rate.</Typography>
         
@@ -17,7 +17,7 @@ export default function Footer() {
         <Grid item xs={12} md={3}>
         
         
-        <Typography variant='h5'><strong>Important Links</strong></Typography>
+        <Typography  fontFamily='Titre'  variant='h5'><strong>Important Links</strong></Typography>
 
         <Typography>* Home</Typography>
         <Typography>* About</Typography>
@@ -28,7 +28,7 @@ export default function Footer() {
         </Grid>
         <Grid item xs={12} md={3}>
         
-        <Typography variant='h5'><strong>Contact Info</strong></Typography>
+        <Typography  fontFamily='Titre'  variant='h5'><strong>Contact Info</strong></Typography>
 
         <Typography>* +213 675925960</Typography>
         <Typography>* rafikbella0@gmail.com</Typography>
@@ -39,7 +39,7 @@ export default function Footer() {
         </Grid>
         <Grid item xs={12} md={3}>
         
-        <Typography variant='h5'><strong>Social Links</strong></Typography>
+        <Typography  fontFamily='Titre'  variant='h5'><strong>Social Links</strong></Typography>
 
         <Typography>* LinkedIn</Typography>
         <Typography>* GitHub</Typography>

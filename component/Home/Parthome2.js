@@ -27,9 +27,9 @@ export default function Parthome2() {
     <Grid  container spacing={2}>
     <Grid className="centered-image-container" item xs={12} md={6}>
       <Box  sx={{ margin:{md:"10%",xs:"20%"}, color:'rgb(244, 241, 241)'}}>
-        <Typography variant='h5' >Let me introduce myself</Typography>
-        <Typography variant='h2'sx={{marginBottom:"20px"}}>About Me</Typography>
-        <Typography variant='h6'sx={{marginBottom:"20px"}}>I am a  website developer from Berrouaghia, Medea. I create professional websites. I love art and always try to show unique views to the audience through my design.</Typography>
+        <Typography fontFamily='Sous-titre' variant='h5' >Let me introduce myself</Typography>
+        <Typography fontFamily='Titre' variant='h2'sx={{marginBottom:"20px"}}>About Me</Typography>
+        <Typography textAlign="justify" fontFamily='Text' variant='h6'sx={{marginBottom:"20px"}}>I am a  website developer from Berrouaghia, Medea. I create professional websites. I love art and always try to show unique views to the audience through my design.</Typography>
         <Button style={{ opacity: scrollYProgress }} variant='contained' href="/projct" >Works</Button>
         <Button variant="outlined" href="/about" sx={{color:"lightgray",border:"3px solid white" ,marginLeft:"20px"}}>Reas More</Button>
         

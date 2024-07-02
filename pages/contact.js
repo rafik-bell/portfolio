@@ -3,7 +3,7 @@ import React from 'react'
 import Partcontact1 from '../component/Contact/Partcontact1'
 import Partcontact2 from '../component/Contact/Partcontact2'
 import { Box } from '@mui/material'
-import imag1 from "./assets/images/bgglobal.png"
+import imag1 from "./assets/images/bgglobal1.png"
 import { motion } from 'framer-motion'
 
 
