@@ -39,7 +39,7 @@ export default function Parthome2() {
       </Grid>
       <Grid item sx={{mt:"5%"}} xs={12} md={6} className="centered-image-container">
       
-      <Cube></Cube>
+      
 
       <Image data-aos="fade-down" src={imag} height="490" width="495" alt="" />
         
