@@ -155,10 +155,10 @@ export default function Partprojct2()   {
 
           </Box>
           </Paper>
-          <Box sx={{margin:"8% 0px 0px 5%"}}>
-          <Typography fontWeight={500} sx={{margin:"0px 5px"  }}><strong> {item.name}</strong> </Typography>
+          <Box sx={{margin:"5% 5%"}}>
+          <Typography fontFamily="Sous-titre"  variant='h5' textAlign="center" sx={{margin:"0px 5px"  }}><strong> {item.name}</strong> </Typography>
           
-          <Typography sx={{margin:"0px 5px" ,height:'80%'}} fontSize={10}>{item.disc}</Typography>
+          
 
           </Box>
 
