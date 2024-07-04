@@ -60,7 +60,7 @@ export default function Herosection() {
       <Grid container spacing={2} justifyContent="center" alignItems="center">
 
     <Grid item xs={12} md={6}>
-      <Box  component={motion.div} variants={animationfont} initial="hidden" animate="visible"sx={{margin:"10px 50px" ,color:'rgb(244, 241, 241)'}}>
+      <Box  component={motion.div} variants={animationfont} initial="hidden" animate="visible"sx={{margin:"10px 10%" ,color:'rgb(244, 241, 241)'}}>
       
             <Typography variants={animationfontChild} component={motion.div}  fontFamily='Titre' variant='h4' sx={{textAlign:'center' }}>Hello, This is</Typography>
             <Typography variants={animationfontChild} component={motion.div}   fontFamily='Titre'variant='h2' sx={{ textAlign: 'center' }}>Rafik Bellarbi</Typography>

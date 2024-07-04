@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Box } from '@mui/material'
-import Navbar from '../../component/Home/navbar';
-import Footer from '../../component/Home/Footer';
+import Navbar from '../../component/Layout_component/navbar';
+import Footer from '../../component/Layout_component/Footer';
 import { useRouter } from 'next/router';
 
 export default function Layout({ children }) {

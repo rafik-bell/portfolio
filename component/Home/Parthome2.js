@@ -3,12 +3,7 @@ import { Box, Button, Typography ,Grid, Container } from '@mui/material'
 
 import imag from "../../pages/assets/images/person.png"
 
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Image from 'next/image';
-import { useScroll, animated } from '@react-spring/web'
-import Cube from '../cube_animation/cube'
-import { MyComponent } from '../frame-motion_compo/animation';
 
 
 
@@ -25,8 +20,8 @@ export default function Parthome2() {
 
    <Container>
     <Grid  container spacing={2}>
-    <Grid className="centered-image-container" item xs={12} md={6}>
-      <Box  sx={{ margin:{md:"10%",xs:"20%"}, color:'rgb(244, 241, 241)'}}>
+    <Grid  item xs={12} md={6}>
+      <Box  sx={{ marginY:{md:"10%",xs:"20%"},marginX:{md:"10%",xs:"10%"}, color:'rgb(244, 241, 241)'}}>
         <Typography fontFamily='Sous-titre' variant='h5' >Let me introduce myself</Typography>
         <Typography fontFamily='Titre' variant='h2'sx={{marginBottom:"20px"}}>About Me</Typography>
         <Typography textAlign="justify" fontFamily='Text' variant='h6'sx={{marginBottom:"20px"}}>I am a  website developer from Berrouaghia, Medea. I create professional websites. I love art and always try to show unique views to the audience through my design.</Typography>
