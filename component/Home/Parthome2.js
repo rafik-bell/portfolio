@@ -18,7 +18,7 @@ const img ={width:'300px',height:'380px'}
 const a ={alignItems:"center",justifyContent:'center',display:'flex' ,marginRight :"10px"}
 
 export default function Parthome2() {
-  const { scrollYProgress } = useScroll()
+  
   return (
     <>
    
@@ -30,7 +30,7 @@ export default function Parthome2() {
         <Typography fontFamily='Sous-titre' variant='h5' >Let me introduce myself</Typography>
         <Typography fontFamily='Titre' variant='h2'sx={{marginBottom:"20px"}}>About Me</Typography>
         <Typography textAlign="justify" fontFamily='Text' variant='h6'sx={{marginBottom:"20px"}}>I am a  website developer from Berrouaghia, Medea. I create professional websites. I love art and always try to show unique views to the audience through my design.</Typography>
-        <Button style={{ opacity: scrollYProgress }} variant='contained' href="/projct" >Works</Button>
+        <Button variant='contained' href="/projct" >Works</Button>
         <Button variant="outlined" href="/about" sx={{color:"lightgray",border:"3px solid white" ,marginLeft:"20px"}}>Reas More</Button>
         
 
