@@ -2,12 +2,28 @@ import Tab from "@mui/material/Tab"
 import React, { useEffect, useState } from "react";
 import Tabs from "@mui/material/Tabs"
 import Box from "@mui/material/node/Box/Box";
-import { AppBar, Link, Toolbar } from "@mui/material";
+import { AppBar, Button, Link, Menu, MenuItem, Toolbar } from "@mui/material";
 import Image from "next/image";
 import img1 from '../../pages/assets/images/portfolio1.png'
 import img2 from '../../pages/assets/images/portfolio2.png'
 import img3 from '../../pages/assets/images/portfolio3.png'
 import { motion } from "framer-motion";
+import MenuIcon from '@mui/icons-material/Menu';
+import NavigationIcon from '@mui/icons-material/Navigation';
+const linkStyles_in_menu = {
+  color:'black' ,
+  fontSize: 18 ,
+  margin:'5px',
+  textDecoration:'none',
+  fontFamily:"Sous-titre",
+  '&:hover': {
+    textDecoration:'none',
+    color :'var(--Dark_Charcoal)',
+    
+    
+},
+
+};
 export default function Navbar() {
     const [value, setValue] = React.useState('one');
 
@@ -96,13 +112,18 @@ transition={{
           </div>
           
         
-       <Tabs  value={value} onChange={handleChange} centered>
+       <Tabs sx={{display: { lg: 'flex', md: 'flex', xs: 'none' }}} value={value} onChange={handleChange} centered>
         <Tab sx={{fontWeight:700, color:"white" ,fontFamily:"Sous-titre"}}label="Home" href="/" ></Tab>
         <Tab sx={{fontWeight:700, color:"white",fontFamily:"Sous-titre"}}label="About" href="/#section1" />
         <Tab sx={{fontWeight:700, color:"white",fontFamily:"Sous-titre"}}label="Projrcts" href="/projct"/>
         <Tab sx={{fontWeight:700, color:"white",fontFamily:"Sous-titre"}}label="contact" href="/#section2" />
         
       </Tabs>
+      <Box sx={{ display: {md: 'none', lg: 'none' } }}>
+              <Button  sx={{color:"var(--Bright_Gray)"}} id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
+                <MenuIcon  fontSize="large"></MenuIcon>
+              </Button>
+            </Box>
     </Toolbar>
     </AppBar>)}
     <style >{`
@@ -114,12 +135,8 @@ transition={{
           }
         
           
-        @media (max-width: 600px) {
-          .divimg{
-            display: none;
-            
-          }
-    }
+      
+    
        
         
         
@@ -128,7 +145,24 @@ transition={{
         
       `}</style>
       
-    
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          style: { display: 'flex', flexDirection: 'column', alignItems: 'center',padding:'5px' },
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem onClick={handleClose}><Link href="/" sx={linkStyles_in_menu}>Home</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/#section1" sx={linkStyles_in_menu}>About</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/projct" sx={linkStyles_in_menu}>Projrcts</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/#section2" sx={linkStyles_in_menu}>contact</Link></MenuItem>
+        
+
+        
+      </Menu>
       </Box>
     
   )

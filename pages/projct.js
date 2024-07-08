@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from '../component/Home/navbar'
-import Footer from '../component/Home/Footer'
+
 import imag1 from "./assets/images/bgglobal1.png"
 
 import Partprojct1 from '../component/Projct/Partprojct1'

@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from '../component/Home/navbar'
-import Footer from '../component/Home/Footer'
+
 import Partabout1 from '../component/About/Partabout1'
 import Partabout2 from '../component/About/Partabout2'
 import Parthome4 from '../component/Home/Parthome4'
